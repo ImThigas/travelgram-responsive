@@ -1,0 +1,46 @@
+main {
+  background-color: var(--surface-color);
+
+  & #about {
+    display: grid;
+    margin-inline: 1rem;
+
+    & .about-content {
+        margin-block: 2rem;
+        flex-wrap: wrap;
+      & img {
+        border-radius: 50%;
+        width: 7.5rem;
+        height: auto;
+      }
+
+      & .content{
+        margin-top: 1rem;
+
+        & h1{
+            padding-bottom: .5rem;
+        }
+      }
+    }
+
+    & .info{
+        margin-bottom: 2rem;
+
+        & ul{
+            list-style: none;
+
+            & li{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+    }
+  }
+
+  @media (width >= 80em) {
+    & #about {
+      margin-inline: 0;
+    }
+  }
+}

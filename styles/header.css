@@ -1,0 +1,43 @@
+header{
+    background-color: var(--surface-color);
+    & nav{
+        align-items: center;
+        padding-block: 1rem;
+
+        & a:nth-child(1){
+            margin-right: auto;
+            display: flex;
+        }
+
+        & .navigation{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            & a:nth-child(1) img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+    
+    
+            & a:nth-child(4) img{
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: block;
+            }
+        }
+
+    }
+
+    @media (width >= 80em){
+        & nav{
+        padding-block: 1.5rem;
+
+            & .navigation{
+                & a:nth-child(1) img{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
