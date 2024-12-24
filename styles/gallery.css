@@ -1,0 +1,23 @@
+#gallery{
+
+    & .gallery-content{
+        display: grid;
+        gap: 1rem;
+        justify-content: center;
+        margin-block: 1rem;
+
+        & img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (width >= 80em){
+
+        & .gallery-content{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-block: 1.5rem;
+        }
+    }
+}
